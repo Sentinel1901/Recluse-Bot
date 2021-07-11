@@ -32,7 +32,7 @@ module.exports = {
        
         .setColor("#000000")
         .setImage('https://cdn.discordapp.com/attachments/826469496323571773/831903708031221850/standard_1.gif')
-        .setFooter(`©️ 2021 Recluse`)
+        .setFooter(`©️ 2021 Danks bro`)
         .setThumbnail(client.user.displayAvatarURL());
 
       let com = {};
