@@ -10,7 +10,7 @@ module.exports = {
     if (!query) query = await awaitMessages(message);
     if (!query) return;
     const res = await fetch(`https://registry.npmjs.com/${encodeURIComponent(query)}`).catch(err => console.log(err));
-    if (res.status === 404) return message.channel.send('<:recluse7:827723345650647060> | No search results found, maybe try searching for something that exists.');
+    if (res.status === 404) return message.channel.send('No search results found, maybe try searching for something that exists.');
     const body = await res.json();
     const embed = new MessageEmbed()
         .setColor(0xde2c2c)
