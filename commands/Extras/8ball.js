@@ -16,7 +16,7 @@ module.exports = {
       .setColor('RANDOM')
       .setTitle(`${client.user.username}'s 8Ball Game:`)
       .setDescription(`${message.author} Asked Me: \n\`${question}?\` \nAnd My Answer Is: \n**${reactions[Math.floor(Math.random() * reactions.length)]} - ${answers[Math.floor(Math.random() * answers.length)]} !**`)
-      .setFooter('This Game Is Made For Fun Only <:recluse5:827723187981778945> .');
+      .setFooter('This Game Is Made For Fun Only.');
       message.channel.send(botans).then(() => message.delete());
   }
 }
