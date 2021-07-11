@@ -10,7 +10,7 @@ name: "imdb",
   run: async (client, message, args, color) => {
     
     if(!args.length) {
-      return message.channel.send("<:recluse11:827727706959249439> | Please give the name of movie or series")
+      return message.channel.send("Please give the name of movie or series")
     }
     
     const imob = new imdb.Client({apiKey: "5e36f0db"}) //You need to paste you imdb api
