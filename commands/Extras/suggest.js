@@ -23,14 +23,14 @@ module.exports = {
        .setTimestamp();
        
     const done = new MessageEmbed()
-       .setDescription(`<a:checkmark:822102129731698697> | Your suggestion is Submitted here, <#${channel}>\n\nNote: You agreed to get a DM on a reply over your Suggestion!`)
+       .setDescription(`<a:white_check_mark> | Your suggestion is Submitted here, <#${channel}>\n\nNote: You agreed to get a DM on a reply over your Suggestion!`)
        .setColor("00FFFF")
        
     message.channel.send(done)
     
     let msgEmbed = await message.guild.channels.cache.get(channel).send(embed)
     
-    await msgEmbed.react(' <a:pvote2:822102128775528449> ')
-    await msgEmbed.react('<a:downvote:822102128147300352> ')
+    await msgEmbed.react(' <a:arrow_up:> ')
+    await msgEmbed.react('<a:arrow_down:> ')
   }
 }
