@@ -22,7 +22,7 @@ module.exports = {
 
     if(!args.length) {
 
-      return message.channel.send("<:recluse7:827723345650647060> | Please give the weather location")
+      return message.channel.send("Please give the weather location")
 
     }
 
