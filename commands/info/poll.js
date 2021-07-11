@@ -22,8 +22,8 @@ module.exports = {
             .setDescription(args.join(' '))
         var msg = await message.channel.send(embed);
 
-        await msg.react('<a:up:834016242632359967>');
-        await msg.react('<a:down:834018119856029746>');
+        await msg.react('<a:arrow_up:>');
+        await msg.react('<a:arrow_down:>');
 
         message.delete({ timeout: 1000 });
     }
