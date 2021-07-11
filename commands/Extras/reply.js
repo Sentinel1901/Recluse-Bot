@@ -18,27 +18,27 @@ if (channel === null) return;
     const replyQuery = args.slice(1).join(' ');
       
     const number = new MessageEmbed()
-      .setDescription(`<a:wrongggg:822102127097806878>   | I don't think that was a Message ID!`)
+      .setDescription(`I don't think that is a was a Message ID!`)
       .setColor("FF2052")
       
     const id = new MessageEmbed()
-      .setDescription(`<a:wrongggg:822102127097806878> |You forgot to specify Message ID!`)
+      .setDescription(`You forgot to specify Message ID!`)
       .setColor("FF2052")
       
     const query = new MessageEmbed()
-      .setDescription(`<a:wrongggg:822102127097806878>  | You forgot to specify the Reply!`)
+      .setDescription(`You forgot to specify the Reply!`)
       .setColor("FF2052")
       
     const reply = new MessageEmbed()
-      .setDescription(`<a:checkmark:822102129731698697>  | Successfully Replied the Suggestion.`)
+      .setDescription(`Successfully Replied the Suggestion.`)
       .setColor("00FFFF")
       
     const noChannel = new MessageEmbed()
-      .setDescription(`<a:wrongggg:822102127097806878>  | No Suggestion Channel found!`)
+      .setDescription(`No Suggestion Channel found!`)
       .setColor("FF2052")
       
     const noMessage = new MessageEmbed()
-      .setDescription(`<a:wrongggg:822102127097806878>  | Didn't find any Message with that ID!`)
+      .setDescription(`Didn't find any Message with that ID!`)
       .setColor("FF2052")
     
       if(!messageID) return message.channel.send(id);
@@ -54,7 +54,7 @@ if (channel === null) return;
       
       const suggestedEmbed = await suggestionChannel.messages.fetch(messageID).catch(error => {
     const noMessage = new MessageEmbed()
-      .setDescription(`<a:wrongggg:822102127097806878>  | Didn't find any Message with that ID!`)
+      .setDescription(`Didn't find any Message with that ID!`)
       .setColor("FF2052")
   return message.channel.send(noMessage);
   })
