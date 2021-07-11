@@ -14,7 +14,7 @@ module.exports = {
   run: async (client, message, args) => {
     if (!args[0])
       return message.channel.send(
-        `<:recluse2:827722972923428904> | Please Give Something To Search - ${message.author.username}`
+        `Please Give Something To Search - ${message.author.username}`
       );
 
     PlayStore.search({
