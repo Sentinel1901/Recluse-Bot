@@ -16,11 +16,11 @@ module.exports = {
 
         let Text = args.join(" ");
 
-        if (!Text) return message.channel.send(`<:recluse13:827728042448388096> | Please Give anime character to search information about that!`);
+        if (!Text) return message.channel.send(`Please Give anime character to search information about that!`);
 
         if (Text.length > 200) return message.channel.send(`Text Limit - 200`);
 
-        let Msg = await message.channel.send(`**Searching It For You <:recluse14:827755244167495720> please wait for while**`);
+        let Msg = await message.channel.send(`**Searching It For You please wait for while**`);
 
         let Replaced = Text.replace(/ +/g, " ");
 
