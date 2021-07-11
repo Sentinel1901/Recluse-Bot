@@ -16,7 +16,7 @@ module.exports = {
         const noArgs = new Discord.MessageEmbed()
         .setTitle('Missing arguments')
         .setColor(0xFF0000)
-        .setDescription(' <:recluse1:827722928955195402>   You are missing some args (eg: covid all || covid Canada)')
+        .setDescription('You are missing some args (eg: covid all || covid Canada)')
         .setTimestamp()
 
         if(!args[0]) return message.channel.send(noArgs);
