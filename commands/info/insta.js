@@ -10,7 +10,7 @@ module.exports = {
     run: async (client, message, args) => {
         const name = args.join(" ");
 
-        if (!name) return message.channel.send("<:recluse4:827723138959278121> | Please provide your instagram name")
+        if (!name) return message.channel.send("Please provide your instagram name")
       try {
         const account = await instagram.user(name, "7004387805%3A8yJOBJetVvNPOX%3A20") // to get session id dm Dark Ice#3802
         const embed = new MessageEmbed()
