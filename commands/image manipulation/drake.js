@@ -11,11 +11,11 @@ module.exports = {
   run: async (client, message, args) => {
     const Down = args.slice(0).join(" ");
 
-    if (!Down || Down.length > 150) return message.channel.send("<:recluse5:827723187981778945> | Please give up message");
+    if (!Down || Down.length > 150) return message.channel.send("Please give up message");
 
     const Value = args.slice(1).join(" ");
 
-    if (!Value || Value.length > 150) return message.channel.send("<:recluse5:827723187981778945> | Please give down message"); 
+    if (!Value || Value.length > 150) return message.channel.send("Please give down message"); 
     
    const Member = message.mentions.members.first() || message.guild.members.cache.get(args[0]) || message.member;
 
