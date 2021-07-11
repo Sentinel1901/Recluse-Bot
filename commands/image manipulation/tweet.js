@@ -18,7 +18,7 @@ module.exports = {
         let m = await message.channel.send("**Please wait...**");
 
         if(!user){
-            return m.edit("<:recluse6:827723300457152512> | **You Have To Enter Someone's Twitter Nickname!**");
+            return m.edit("**You Have To Enter Someone's Twitter Nickname!**");
         }
 
         if(!text){
