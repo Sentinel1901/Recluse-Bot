@@ -11,7 +11,7 @@ module.exports = {
         if (!search) return message.channel.send({
             embed: {
                 "color": 0x4D5E94,
-                "description": "❌ **What are you searching?**<:recluse10:827723702727606333> "
+                "description": "❌ **What are you searching?**"
 
             }
         });
