@@ -12,7 +12,7 @@ module.exports = {
     
     const Value = args.join(" ");
 
-    if (!Value || Value.length > 150) return message.channel.send("<:recluse2:827722972923428904> |  Please Give Meeting Text And Make Sure Its Not 150+ Characters Long!"); 
+    if (!Value || Value.length > 150) return message.channel.send("Please Give Meeting Text And Make Sure Its Not 150+ Characters Long!"); 
 
     const Embed = new Discord.MessageEmbed()
     .setColor(Color)
