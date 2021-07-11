@@ -14,7 +14,7 @@ const options = {
   
 }
 
-message.channel.send(`<:recluse13:827728042448388096> | Fetching Informtion for the Pokemon`).then(msg => {
+message.channel.send(`Fetching Informtion for the Pokemon`).then(msg => {
   get(options).then(body => {
     
     let embed = new MessageEmbed()
